@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RegisterView">
+   <children>
+      <ImageView fx:id="img_regBG" fitHeight="416.0" fitWidth="448.0" layoutX="-15.0" layoutY="-3.0" pickOnBounds="true" />
+      <Button fx:id="btn_registered" blendMode="MULTIPLY" layoutX="94.0" layoutY="123.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="237.0" text="Registered (lvl 10): 200 coins" wrapText="true">
+         <font>
+            <Font name="Eras Demi ITC" size="15.0" />
+         </font></Button>
+      <Button fx:id="btn_distinguished" blendMode="MULTIPLY" layoutX="95.0" layoutY="198.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="237.0" text="Distinguished (lvl 15): 250 coins">
+         <font>
+            <Font name="Eras Demi ITC" size="14.0" />
+         </font></Button>
+      <Button fx:id="btn_honorable" blendMode="MULTIPLY" layoutX="89.0" layoutY="270.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="237.0" text="Honorable (lvl 20): 350 coins">
+         <font>
+            <Font name="Eras Demi ITC" size="15.0" />
+         </font></Button>
+      <Button fx:id="btn_menu" blendMode="MULTIPLY" layoutX="92.0" layoutY="343.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="237.0" text="Return To Menu">
+         <font>
+            <Font name="Eras Demi ITC" size="14.0" />
+         </font>
+      </Button>
+      <Label contentDisplay="CENTER" layoutX="23.0" layoutY="42.0" prefHeight="28.0" prefWidth="398.0" text="Register Now and Get Bonuses!" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Gameplay Regular" size="20.0" />
+         </font></Label>
+      <Label fx:id="lbl_farmertype" layoutX="277.0" layoutY="17.0" text="Depressed Farmer" textFill="#00ff48">
+         <font>
+            <Font name="Gameplay Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="17.0" text="My Farm Coins:" textFill="#ff00d7">
+         <font>
+            <Font name="Gameplay Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbl_coins" layoutX="132.0" layoutY="17.0" text="\$$$$$$$$$$" textFill="#eeff00">
+         <font>
+            <Font name="Gameplay Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbl_level" layoutX="201.0" layoutY="17.0" text="level 0.0" textFill="#35a8eb">
+         <font>
+            <Font name="Gameplay Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbl_userName" layoutX="186.0" layoutY="91.0" text="Name:" textFill="#fcf3f3">
+         <font>
+            <Font name="Gameplay Regular" size="16.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane_Lot" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LotView">
+    <children>
+        <ImageView fx:id="img_lotBG" fitHeight="418.0" fitWidth="600.0" pickOnBounds="true">
+            <image>
+                <Image url="@../images/lot_bg.png" />
+            </image></ImageView>
+        <Button fx:id="btn_mainMenu" layoutX="451.0" layoutY="374.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Return to Menu">
+            <font>
+                <Font name="Gameplay Regular" size="11.0" />
+            </font></Button>
+        <ImageView fx:id="img_select" blendMode="DARKEN" fitHeight="79.0" fitWidth="233.0" layoutX="184.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/lot_select.png" />
+            </image></ImageView>
+        <ImageView fx:id="img_sel4" blendMode="SRC_ATOP" fitHeight="45.0" fitWidth="46.0" layoutX="364.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="img_sel3" blendMode="SRC_ATOP" fitHeight="45.0" fitWidth="46.0" layoutX="306.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="img_sel2" blendMode="SRC_ATOP" fitHeight="45.0" fitWidth="46.0" layoutX="250.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="img_sel1" blendMode="SRC_ATOP" fitHeight="45.0" fitWidth="46.0" layoutX="193.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="btn_select1" blendMode="MULTIPLY" layoutX="193.0" layoutY="360.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" />
+        <Button fx:id="btn_select2" blendMode="MULTIPLY" layoutX="250.0" layoutY="360.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="46.0" />
+        <Button fx:id="btn_select3" blendMode="MULTIPLY" layoutX="306.0" layoutY="360.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="46.0" />
+        <Rectangle fx:id="rec_exp" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" layoutX="99.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="140.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f7bd" height="17.0" layoutX="242.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="341.0" />
+        <Label fx:id="lbl_farmertype" layoutX="426.0" layoutY="17.0" prefHeight="17.0" prefWidth="153.0" text="Registered Farmer" textFill="#0a8122">
+            <font>
+                <Font name="Gameplay Regular" size="11.0" />
+            </font>
+        </Label>
+        <Label fx:id="lbl_level" layoutX="143.0" layoutY="17.0" prefHeight="17.0" prefWidth="58.0" text="Level ??" textAlignment="CENTER">
+            <font>
+                <Font name="Gameplay Regular" size="9.0" />
+            </font>
+        </Label>
+        <Label fx:id="lbl_coins" layoutX="353.0" layoutY="17.0" prefHeight="17.0" prefWidth="82.0" text="######" textFill="#94a012">
+            <font>
+                <Font name="Gameplay Regular" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="248.0" layoutY="17.0" prefHeight="17.0" prefWidth="105.0" text="My Farm Coins:" textFill="#bd1010">
+            <font>
+                <Font name="Gameplay Regular" size="11.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bdd3e8" height="17.0" layoutX="14.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+        <Button fx:id="btn_select4" blendMode="MULTIPLY" layoutX="363.0" layoutY="360.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="46.0" />
+        <Label fx:id="lbl_name" layoutX="17.0" layoutY="14.0" prefHeight="23.0" prefWidth="82.0" text="USERNAME:" textFill="#83570b">
+            <font>
+                <Font name="Gameplay Regular" size="11.0" />
+            </font>
+        </Label>
+        <Label fx:id="lbl_selectedTool" layoutX="6.0" layoutY="397.0" prefHeight="21.0" prefWidth="164.0">
+            <font>
+                <Font name="Gameplay Regular" size="9.0" />
+            </font></Label>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutX="17.0" layoutY="43.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+        <Label fx:id="lbl_lotTime" layoutX="22.0" layoutY="43.0" prefHeight="30.0" prefWidth="118.0" textAlignment="JUSTIFY">
+            <font>
+                <Font name="Gameplay Regular" size="8.0" />
+            </font>
+        </Label>
+        <Label fx:id="lbl_fertQty" blendMode="SRC_ATOP" layoutX="364.0" layoutY="387.0" prefHeight="18.0" prefWidth="45.0" textAlignment="RIGHT" textFill="#fff9f9">
+            <font>
+                <Font name="Gameplay Regular" size="12.0" />
+            </font></Label>
+        <Button fx:id="btn_Inventory" layoutX="17.0" layoutY="375.0" mnemonicParsing="false" text="Check Inventory">
+            <font>
+                <Font name="Gameplay Regular" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="btn_harvest" layoutX="448.0" layoutY="336.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="82.0" text="Harvest" textFill="#f80000">
+            <font>
+                <Font name="Gameplay Regular" size="12.0" />
+            </font>
+        </Button>
+        <AnchorPane fx:id="anchorPane_Inv" layoutX="10.0" layoutY="38.0" prefHeight="343.0" prefWidth="567.0">
+            <children>
+                <ImageView fx:id="img_frame" fitHeight="321.0" fitWidth="567.0" layoutX="6.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/inv_frame.jpg" />
+                    </image>
+                </ImageView>
+                <ListView fx:id="List_inv" accessibleRole="BUTTON" layoutX="42.0" layoutY="37.0" opacity="0.75" prefHeight="267.0" prefWidth="494.0" />
+                <Label fx:id="lbl_noitems" layoutX="68.0" layoutY="54.0" text="You have no Items!">
+                    <font>
+                        <Font name="Gameplay Regular" size="39.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lbl_info" layoutX="293.0" layoutY="46.0" prefHeight="185.0" prefWidth="233.0" text="SEED INFO HERE" textFill="#b20000">
+                    <font>
+                        <Font name="Gameplay Regular" size="12.0" />
+                    </font>
+                </Label>
+                <Button fx:id="btn_action" layoutX="426.0" layoutY="242.0" mnemonicParsing="false" text="Plant Seed">
+                    <font>
+                        <Font name="Gameplay Regular" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btn_Lot" layoutX="425.0" layoutY="276.0" mnemonicParsing="false" text="Back to Lot">
+                    <font>
+                        <Font name="Gameplay Regular" size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Label fx:id="lbl_display" layoutX="153.0" layoutY="40.0" prefHeight="30.0" prefWidth="428.0" text="Place your seed in a Fertilized Lot!" textFill="#ffe500">
+            <font>
+                <Font name="Gameplay Regular" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
